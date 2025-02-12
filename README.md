@@ -35,7 +35,7 @@ import muellerphys
 ### Example Usage
 ```python
 import numpy as np
-import muellerphys
+import pymueller
 
 M = np.array([
     [1, 0, 0, 0],
@@ -45,12 +45,12 @@ M = np.array([
 ])
 
 # Using the physical realizability test functions
-H = py.build_eigen_matrix(M)
+H = pymueller.build_eigen_matrix(M)
 
-if py.choletsky(M):
+if pymueller.choletsky(M):
     print("Matrix passed the Cholesky test.")
 
-if py.charpoly(M):
+if pymueller.charpoly(M):
     print("Matrix is physically realizable.")
 
 # Using the decomposition functions
