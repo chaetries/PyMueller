@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pymueller",  # The name of your package
-    version="0.1.1",   # Your current version
+    version="0.1.2",   # Your current version
     description="Tools and functions for 4x4 Mueller matrices",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
